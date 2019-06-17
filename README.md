@@ -1,4 +1,4 @@
-## Drunk Orchestra
+## Coder Dojo Pittsburgh
 
 Make sure node is installed. You can get it [here](https://nodejs.org/en/download/).
 
