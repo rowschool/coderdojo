@@ -6488,30 +6488,18 @@ a {
 @media (max-width: 992px) {
   .menu-container {
     padding: 20px 20px !important; }
-  .menu-logo {
-    font-size: 28px !important; }
   .menu-item-list-item, .menu-item-list-dropdown {
     font-size: 16px !important;
     padding: 5px 10px 0 10px !important; } }
 
 .menu-container {
-  max-height: 100px;
   background-color: #fff;
   padding: 0px 100px;
-  border-bottom: 2px solid #003087;
+  border-bottom: 2px solid #FFB612;
   box-shadow: 2px 2px #101820;
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
-
-.menu-logo {
-  font-size: 64px;
-  font-weight: 200;
-  max-width: 50%;
-  color: #101820;
-  display: inline-flex; }
-  .menu-logo a {
-    text-decoration: none; }
 
 .menu-item-list {
   list-style: none;
@@ -6569,6 +6557,21 @@ a {
     color: #003087; }
     .menu-item-list-dropdown-list-item:hover .menu-item-list-item-link {
       color: #003087; }
+
+.hero-container {
+  width: 100%;
+  background-color: #003087;
+  text-align: center;
+  padding: 50px 0; }
+
+.hero-container-image {
+  height: 100px; }
+
+.hero-container-text {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 200;
+  cursor: default; }
 
 .text-center {
   text-align: center; }

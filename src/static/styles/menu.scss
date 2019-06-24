@@ -3,9 +3,9 @@
         padding: 20px 20px !important;
     }
 
-    .menu-logo {
-        font-size: 28px !important;
-    }
+    // .menu-logo {
+    //     font-size: 28px !important;
+    // }
 
     .menu-item-list {
 
@@ -18,34 +18,13 @@
 }
 
 .menu-container {
-    max-height: 100px;
     background-color: $white;
     padding: 0px 100px;
-    border-bottom: 2px solid $blue;
+    border-bottom: 2px solid $gold;
     box-shadow: 2px 2px $black;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.menu-logo {
-    font-size: 64px;
-    font-weight: 200;
-    max-width: 50%;
-    color: $black;
-    display: inline-flex;
-
-    a {
-        text-decoration: none;
-    }
-}
-
-.menu-logo-image {
-
-}
-
-.menu-logo-text {
-
 }
 
 .menu-item-list {
