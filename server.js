@@ -8,7 +8,10 @@ var params = {
 	logLevel: 2
 };
 
-childProcess.exec("npm run build-views && npm run watch-css && npm run watch-views", {
+// NOTE: If CSS doesn't build,
+// this will fail silently if you have typos in your SASS.
+// Run `npm run build-css` to test and the console will show an error if this is the case.
+childProcess.exec("npm run build-views && npm run watch-views && npm run build-css && npm run watch-css", {
         "shell": true
     },
     (error, stdout, stderr) => {

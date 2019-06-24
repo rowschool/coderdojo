@@ -6,7 +6,8 @@
   "dependencies": {
     "handlebars": "^4.0.11",
     "live-server": "^1.2.0",
-    "node-sass": "^4.8.3"
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.19.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -2,7 +2,7 @@
 @import "icons";
 @import "grid";
 @import "tags";
-@import "colony/main";
+@import "menu";
 
 .text-center {
     text-align: center;
@@ -11,7 +11,7 @@
 .main-container {
     width: 75%;
     margin: 50px auto 100px auto;
-    color: $textColor;
+    color: $black;
 }
 
 .content-container {
@@ -53,12 +53,12 @@
 
 .footer-container {
     position: fixed;
-    background-color: $brandColorPrimary;
+    background-color: $blue;
     left: 0;
     right: 0;
     bottom: 0;
     max-height: 50px;
-    color: $brandColorSecondary;
+    color: $gold;
     padding: 15px 0;
 }
 

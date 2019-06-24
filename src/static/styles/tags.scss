@@ -1,5 +1,5 @@
 html {
-    background-color: $backgroundColor;
+    background-color: $white;
     font-family: "Arial Light", "Helvetica Neue", sans-serif;
 }
 
@@ -33,10 +33,10 @@ ul {
 }
 
 a {
-    color: $textColor;
+    color: $blue;
     text-decoration: none;
 
     &:visited {
-        color: $textColor;
+        color: $black;
     }
 }

@@ -19,10 +19,10 @@
 
 .menu-container {
     max-height: 100px;
-    background-color: $backgroundColor;
+    background-color: $white;
     padding: 0px 100px;
-    border-bottom: 2px solid $brandColorPrimary;
-    box-shadow: 2px 2px $boxShadowColor;
+    border-bottom: 2px solid $blue;
+    box-shadow: 2px 2px $black;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -32,11 +32,20 @@
     font-size: 64px;
     font-weight: 200;
     max-width: 50%;
-    color: $textColor;
+    color: $black;
+    display: inline-flex;
 
     a {
         text-decoration: none;
     }
+}
+
+.menu-logo-image {
+
+}
+
+.menu-logo-text {
+
 }
 
 .menu-item-list {
@@ -48,36 +57,36 @@
     padding: 10px 20px 0 20px;
     font-size: 24px;
     font-weight: 200;
-    color: $textColor;
+    color: $black;
     display: inline;
     position: relative;
 }
 
 .menu-item-list-item .menu-item-list-item-link {
-    color: $textColor;
+    color: $black;
     text-decoration: none;
 
     &:visited {
-        color: $textColor;
+        color: $black;
     }
 
     &:hover {
-        color: $hoverTileForegroundColor;
+        color: $gold;
     }
 }
 
 .menu-item-list-dropdown-list-item .menu-item-list-item-link {
-    color: $brandColorSecondary;
+    color: $gold;
     text-decoration: none;
 
 
     &:visited {
-        color: $brandColorSecondary;
+        color: $gold;
     }
 
     &:hover {
-        background-color: $brandColorSecondary;
-        color: $brandColorPrimary;
+        background-color: $gold;
+        color: $blue;
     }
 }
 
@@ -94,9 +103,9 @@
     font-size: 24px;
     font-weight: 200;
     width: max-content;
-    color: $brandColorSecondary;
-    background-color: $brandColorPrimary;
-    border: 1px solid $brandColorPrimary;
+    color: $gold;
+    background-color: $blue;
+    border: 1px solid $blue;
 
 }
 
@@ -112,11 +121,11 @@
     position: relative;
 
     &:hover {
-        background-color: $brandColorSecondary;
-        color: $brandColorPrimary;
+        background-color: $gold;
+        color: $blue;
 
         .menu-item-list-item-link {
-            color: $brandColorPrimary;
+            color: $blue;
         }
     }
 }
