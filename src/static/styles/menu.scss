@@ -1,17 +1,4 @@
-@media (max-width: $screen-desktop) {
-    .menu-container {
-        padding: 20px 20px !important;
-    }
-
-    .menu-item-list {
-
-    }
-
-    .menu-item-list-item {
-        font-size: 16px !important;
-        padding: 5px 10px 0 10px !important;
-    }
-}
+// TODO: Make menu mobile responsive.
 
 .menu-container {
     background-color: $gold;;
@@ -46,18 +33,18 @@
 }
 
 .menu-item-list-dropdown-list-item .menu-item-list-item-link {
-    color: $gold;
+    // color: $blue;
     text-decoration: none;
 
 
     &:visited {
-        color: $gold;
-    }
-
-    &:hover {
-        background-color: $gold;
         color: $blue;
     }
+
+    // &:hover {
+    //     background-color: $blue;
+    //     color: $gold;
+    // }
 }
 
 .menu-item-list-dropdown {
@@ -69,14 +56,14 @@
     position: absolute;
     list-style: none;
     top: 39px;
+    right: 0;
     left: 0;
     font-size: 24px;
     font-weight: 200;
-    width: max-content;
-    color: $gold;
-    background-color: $blue;
+    color: $blue;
+    background-color: $gold;
     border: 1px solid $blue;
-
+    padding-inline-start: 0;
 }
 
 .menu-item-list-dropdown:hover .menu-item-list-dropdown-list {
@@ -89,13 +76,16 @@
     float: none;
     display: list-item;
     position: relative;
+    list-style: none;
 
     &:hover {
-        background-color: $gold;
-        color: $blue;
+        background-color: $blue;
+        color: $gold;
 
         .menu-item-list-item-link {
-            color: $blue;
+            width: max-content;
+            color: $gold;
+            background-color: $blue;
         }
     }
 }
