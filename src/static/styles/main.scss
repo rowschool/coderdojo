@@ -6,6 +6,7 @@
 @import "hero";
 @import "today";
 @import "mentors";
+@import "tables";
 
 .text-center {
     text-align: center;
@@ -53,15 +54,15 @@
         }
 
         &:visited {
-            color: white;
+            color: $white;
         }
     }
 }
 
 .button-blue {
-    background-color: blue;
+    background-color: $blue;
 }
 
 .button-green {
-    background-color: green;
+    background-color: $green;
 }

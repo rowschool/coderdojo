@@ -6574,17 +6574,6 @@ a.no-style {
   font-weight: 200;
   cursor: default; }
 
-.today-table {
-  width: 100%;
-  margin-bottom: 20px; }
-
-.today-table-row td {
-  border: 1px solid #101820;
-  padding: 5px 10px;
-  font-size: 24px; }
-  .today-table-row td a {
-    color: #101820; }
-
 .today-theme {
   font-size: 1.25em;
   font-style: italic; }
@@ -6592,6 +6581,17 @@ a.no-style {
 .mentors-companies {
   width: 100%;
   margin: 20px auto 0 auto; }
+
+.content-table {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.content-table-row td {
+  border: 1px solid #101820;
+  padding: 5px 10px;
+  font-size: 24px; }
+  .content-table-row td a {
+    color: #101820; }
 
 .text-center {
   text-align: center; }
@@ -6630,10 +6630,10 @@ a.no-style {
     .button a:hover {
       text-decoration: none; }
     .button a:visited {
-      color: white; }
+      color: #fff; }
 
 .button-blue {
-  background-color: blue; }
+  background-color: #003087; }
 
 .button-green {
-  background-color: green; }
+  background-color: #085; }
