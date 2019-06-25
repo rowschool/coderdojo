@@ -20,3 +20,47 @@
     text-align: justify;
     margin: auto;
 }
+
+.content-box {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.main-page-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: 400;
+    font: "Arial Bold", "sans-serif";
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid $black;
+
+    a {
+        color: $white;
+        background-color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: white;
+        }
+    }
+}
+
+.button-blue {
+    background-color: blue;
+}
+
+.button-green {
+    background-color: green;
+}

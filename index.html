@@ -7,8 +7,12 @@
 
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Drunk Orchestra" />
+    <meta property="og:image" content="/src/static/images/favicon.png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:title" content="Coder Dojo Pittsburgh" />
 
+    <link rel="shortcut icon" type="image/x-icon" href="/src/static/images/favicon.png">
     <link type="text/css" href="/styles/main.css" rel="stylesheet">
   </head>
 
@@ -25,11 +29,6 @@
           </a>
         </li>
         <li class="menu-item-list-item">
-          <a class="menu-item-list-item-link" href="curriculum.html">
-            Curriculum
-          </a>
-        </li>
-        <li class="menu-item-list-item">
           <a class="menu-item-list-item-link" href="today.html">
             Today
           </a>
@@ -39,10 +38,22 @@
             Mastery
           </a>
         </li>
-        <li class="menu-item-list-item">
+        <li class="menu-item-list-dropdown">
           <a class="menu-item-list-item-link" href="#">
-            Item
+            Mentors
           </a>
+          <ul class="menu-item-list-dropdown-list">
+            <li class="menu-item-list-dropdown-list-item">
+              <a class="menu-item-list-item-link" href="mentors.html#adult">
+                Adult Mentors
+              </a>
+            </li>
+            <li class="menu-item-list-dropdown-list-item">
+              <a class="menu-item-list-item-link" href="mentors.html#junior">
+                Junior Mentors
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="menu-item-list-dropdown">
           <a class="menu-item-list-item-link" href="#">
@@ -65,18 +76,35 @@
     </div>
   
     <div class="content-container">
-      <h2 class="main-page-header">
-        CoderDojo is a global movement of free, volunteer-led, community-based programming clubs for young people.
-      </h2>
-      <p>
-        Anyone aged seven to seventeen can visit a Dojo where they can learn to code, build a website, create an app or a game, and explore technology in an informal, creative, and social environment.
-      </p>
-      <p>
-        We focus on self-led learning, peer learning, and youth mentoring. We aim to help young people realise that they can build a positive future through coding and community.
-      </p>
-      <p>
-        You can learn more about the global CoderDojo community <a href="https://coderdojo.com/" target="_blank">here</a>.
-      </p>
+      <div class="content-box">
+        <h2 class="main-page-header">
+          CoderDojo is a global movement of free, volunteer-led, community-based programming clubs for young people.
+        </h2>
+        <p>
+          Anyone aged seven to seventeen can visit a Dojo where they can learn to code, build a website, create an app or a game, and explore technology in an informal, creative, and social environment.
+        </p>
+        <p>
+          We focus on self-led learning, peer learning, and youth mentoring. We aim to help young people realise that they can build a positive future through coding and community.
+        </p>
+        <p>
+          You can learn more about the global CoderDojo community <a href="https://coderdojo.com/" target="_blank">here</a>.
+        </p>
+      </div>
+  
+      <div class="content-box">
+        <p>
+          CoderDojo Pittsburgh sessions happen on the second Saturday of every month from 8:30am to noon.
+        </p>
+  
+        <div class="main-page-buttons">
+          <div class="button button-green">
+            <a href="#" target="_blank">Attend a session!</a>
+          </div>
+          <div class="button button-blue">
+            <a href="mentors.html">Become a mentor!</a>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
