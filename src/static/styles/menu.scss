@@ -3,10 +3,6 @@
         padding: 20px 20px !important;
     }
 
-    // .menu-logo {
-    //     font-size: 28px !important;
-    // }
-
     .menu-item-list {
 
     }
@@ -18,13 +14,13 @@
 }
 
 .menu-container {
-    background-color: $white;
-    padding: 0px 100px;
-    border-bottom: 2px solid $gold;
-    box-shadow: 2px 2px $black;
+    background-color: $gold;;
+    padding: 20px 100px;
+    border-bottom: 5px solid $blue;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 30px;
 }
 
 .menu-item-list {
@@ -36,21 +32,16 @@
     padding: 10px 20px 0 20px;
     font-size: 24px;
     font-weight: 200;
-    color: $black;
+    color: $blue;
     display: inline;
     position: relative;
 }
 
 .menu-item-list-item .menu-item-list-item-link {
-    color: $black;
-    text-decoration: none;
+    color: $blue;
 
     &:visited {
-        color: $black;
-    }
-
-    &:hover {
-        color: $gold;
+        color: $blue;
     }
 }
 

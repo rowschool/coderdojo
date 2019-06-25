@@ -1,0 +1,33 @@
+.today-table {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.today-table-row {
+    td {
+        border: 1px solid $black;
+        padding: 5px 10px;
+        font-size: 24px;
+
+        a {
+            color: $black;
+        }
+    }
+}
+
+.today-details {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.today-details-content {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.today-theme {
+    font-size: 1.25em;
+    font-style: italic;
+}

@@ -4,6 +4,7 @@
 @import "tags";
 @import "menu";
 @import "hero";
+@import "today";
 
 .text-center {
     text-align: center;
@@ -52,21 +53,21 @@
     margin: 0;
 }
 
-.footer-container {
-    position: fixed;
-    background-color: $blue;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 50px;
-    color: $gold;
-    padding: 15px 0;
-}
-
-.footer-container-content {
-    text-align: center;
-}
-
-.footer-container-text {
-
-}
+// .footer-container {
+//     position: fixed;
+//     background-color: $blue;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     max-height: 50px;
+//     color: $gold;
+//     padding: 15px 0;
+// }
+//
+// .footer-container-content {
+//     text-align: center;
+// }
+//
+// .footer-container-text {
+//
+// }
