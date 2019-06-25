@@ -46,3 +46,9 @@ a {
         color: $black;
     }
 }
+
+a.no-style {
+    background: none;
+    color: inherit;
+    text-decoration: none;
+}

@@ -8,10 +8,11 @@
 
 .menu-item-list {
     list-style: none;
-    margin: 0 30px;
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline-start: 0;
 }
 
 .menu-item-list-item {
