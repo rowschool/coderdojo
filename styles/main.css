@@ -6584,6 +6584,7 @@ a.no-style {
 
 .content-table {
   width: 100%;
+  margin-top: 20px;
   margin-bottom: 20px; }
 
 .content-table-row td {
