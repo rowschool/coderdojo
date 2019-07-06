@@ -15,3 +15,16 @@
         }
     }
 }
+
+.content-table-row-sm {
+    td {
+        font-size: 18px;
+        border: 1px solid $black;
+        padding: 5px 10px;
+    }
+}
+
+.content-table-row.text-center {
+    font-weight: 500;
+    text-decoration: underline;
+}

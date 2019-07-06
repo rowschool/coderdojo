@@ -15,6 +15,7 @@
       justify-content: space-around;
 
       .even-column {
+        padding: 5px;
         width: evenColumnWidth($column, 100);
         position: relative;
         box-sizing: border-box;
