@@ -189,7 +189,8 @@
   width: 100%;
   background-color: #003087;
   text-align: center;
-  padding: 20px 0; }
+  padding: 20px 0;
+  cursor: pointer; }
 
 .hero-container-image {
   height: 100px; }
@@ -197,8 +198,7 @@
 .hero-container-text {
   color: #fff;
   font-size: 64px;
-  font-weight: 200;
-  cursor: default; }
+  font-weight: 200; }
 
 @font-face {
   font-family: "icons";
