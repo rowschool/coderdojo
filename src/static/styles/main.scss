@@ -1,13 +1,14 @@
 @import "variables"; // variables MUST go first
-@import "icons";
-@import "grid";
-@import "tags";
-@import "menu";
-@import "hero";
-@import "today";
-@import "mentors";
-@import "tables";
+
 @import "curriculum";
+@import "grid";
+@import "hero";
+@import "icons";
+@import "mentors";
+@import "menu";
+@import "tables";
+@import "tags";
+@import "today";
 
 .text-center {
     text-align: center;
