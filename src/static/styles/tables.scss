@@ -3,6 +3,7 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-collapse: collapse;
 }
 
 .content-table-row {
@@ -25,9 +26,12 @@
 }
 
 .comparison-table-row {
+    &:not(:last-child) {
+        border-bottom: 1px dotted black;
+    }
+
     td {
         font-size: 18px;
-        border-bottom: 1px dotted black;
         padding: 20px 40px;
         vertical-align: top;
     }
