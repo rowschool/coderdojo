@@ -2,3 +2,27 @@
     width: 100%;
     margin: 20px auto 0 auto;
 }
+
+.mentors {
+    margin-top: 20px;
+}
+
+.even-column.mentor {
+    text-align: center;
+}
+
+.mentor-pic {
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.mentor-name {
+    display: block;
+    font-size: 22px;
+}
+
+.mentor-title {
+    display: block;
+    font-size: 18px;
+}

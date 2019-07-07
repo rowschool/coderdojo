@@ -17,6 +17,13 @@
     }
 }
 
+.comparison-table-row-header {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 .comparison-table-row {
     td {
         font-size: 18px;
@@ -24,11 +31,4 @@
         padding: 20px 40px;
         vertical-align: top;
     }
-}
-
-.comparison-table-row-header {
-    font-size: 24px;
-    text-align: center;
-    font-weight: 500;
-    text-decoration: underline;
 }

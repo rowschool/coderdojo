@@ -6551,7 +6551,8 @@ a.no-style {
   color: #003087;
   background-color: #FFB612;
   border: 1px solid #003087;
-  padding-inline-start: 0; }
+  padding-inline-start: 0;
+  width: max-content; }
 
 .menu-item-list-dropdown:hover .menu-item-list-dropdown-list {
   display: inherit; }
@@ -6594,6 +6595,25 @@ a.no-style {
   width: 100%;
   margin: 20px auto 0 auto; }
 
+.mentors {
+  margin-top: 20px; }
+
+.even-column.mentor {
+  text-align: center; }
+
+.mentor-pic {
+  border-radius: 50%;
+  height: 150px;
+  margin-bottom: 5px; }
+
+.mentor-name {
+  display: block;
+  font-size: 22px; }
+
+.mentor-title {
+  display: block;
+  font-size: 18px; }
+
 .content-table,
 .comparison-table {
   width: 100%;
@@ -6607,17 +6627,17 @@ a.no-style {
   .content-table-row td a {
     color: #101820; }
 
-.comparison-table-row td {
-  font-size: 18px;
-  border-bottom: 1px dotted black;
-  padding: 20px 40px;
-  vertical-align: top; }
-
 .comparison-table-row-header {
   font-size: 24px;
   text-align: center;
   font-weight: 500;
   text-decoration: underline; }
+
+.comparison-table-row td {
+  font-size: 18px;
+  border-bottom: 1px dotted black;
+  padding: 20px 40px;
+  vertical-align: top; }
 
 .logo-codeanywhere {
   background-color: black;
