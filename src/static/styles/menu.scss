@@ -60,13 +60,13 @@
     list-style: none;
     top: 39px;
     right: 0;
-    left: 0;
     font-size: 24px;
     font-weight: 200;
     color: $blue;
     background-color: $gold;
     border: 1px solid $blue;
     padding-inline-start: 0;
+    min-width: 100%;
     width: max-content;
 }
 

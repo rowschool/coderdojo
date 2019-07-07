@@ -6488,6 +6488,11 @@ ul {
   -webkit-margin-start: 0;
   -webkit-margin-end: 0px; }
 
+.content-box ul li {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
 a {
   color: #003087;
   background-color: #FFB612;
@@ -6545,13 +6550,13 @@ a.no-style {
   list-style: none;
   top: 39px;
   right: 0;
-  left: 0;
   font-size: 24px;
   font-weight: 200;
   color: #003087;
   background-color: #FFB612;
   border: 1px solid #003087;
   padding-inline-start: 0;
+  min-width: 100%;
   width: max-content; }
 
 .menu-item-list-dropdown:hover .menu-item-list-dropdown-list {
