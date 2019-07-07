@@ -56,4 +56,9 @@ a.no-style {
     background: none;
     color: inherit;
     text-decoration: none;
+
+    &:visited, 
+    &:hover {
+        text-decoration: none;
+    }
 }

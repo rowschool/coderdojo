@@ -4,6 +4,10 @@
     text-align: center;
     padding: 20px 0;
     cursor: pointer;
+
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 .hero-container-image {

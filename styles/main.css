@@ -191,6 +191,8 @@
   text-align: center;
   padding: 20px 0;
   cursor: pointer; }
+  .hero-container a:hover {
+    text-decoration: none; }
 
 .hero-container-image {
   height: 100px; }
@@ -6649,6 +6651,8 @@ a.no-style {
   background: none;
   color: inherit;
   text-decoration: none; }
+  a.no-style:visited, a.no-style:hover {
+    text-decoration: none; }
 
 .today-theme {
   font-size: 1.25em;
