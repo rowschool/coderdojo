@@ -6668,7 +6668,9 @@ a.no-style {
 
 .content-container {
   max-width: 75%;
-  margin: 20px auto; }
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column; }
 
 .main-page-header {
   max-width: 40%;
@@ -6679,7 +6681,7 @@ a.no-style {
   border: 1px solid black;
   box-shadow: 2px 2px 2px black;
   padding: 20px;
-  margin: 40px 0; }
+  margin: 20px 0; }
 
 .main-page-buttons {
   display: flex;

@@ -23,6 +23,10 @@
 .content-container {
     max-width: 75%;
     margin: 20px auto;
+    
+    // Prevent vertical margin collapse with flexbox!
+    display: flex;
+    flex-direction: column;
 }
 
 .main-page-header {
@@ -35,7 +39,7 @@
     border: 1px solid black;
     box-shadow: 2px 2px 2px black;
     padding: 20px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .main-page-buttons {
