@@ -6511,6 +6511,9 @@ i:before {
   display: block;
   font-size: 18px; }
 
+.mentors-recruitment li {
+  list-style: none; }
+
 .menu-container {
   background-color: #FFB612;
   border-bottom: 5px solid #003087;
@@ -6601,6 +6604,9 @@ i:before {
   text-align: center;
   font-weight: 500;
   text-decoration: underline; }
+
+.comparison-table-row td:last-child {
+  width: 75%; }
 
 .comparison-table-row:not(:last-child) {
   border-bottom: 1px dotted black; }

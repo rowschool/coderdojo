@@ -26,6 +26,12 @@
 }
 
 .comparison-table-row {
+    td {
+        &:last-child {
+            width: 75%;
+        }
+    }
+
     &:not(:last-child) {
         border-bottom: 1px dotted black;
     }
