@@ -6659,6 +6659,14 @@ a.no-style {
   font-size: 1.25em;
   font-style: italic; }
 
+@media (min-width: 992px) {
+  .visible-phone {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .hidden-phone {
+    display: none; } }
+
 .text-center {
   text-align: center; }
 
