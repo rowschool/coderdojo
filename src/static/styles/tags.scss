@@ -32,7 +32,8 @@ ul {
     // -webkit-padding-start: 0;
 }
 
-.content-box ul li {
+.content-box ul li,
+.content-box ol li {
     font-size: 18px;
     margin-top: 5px;
     margin-bottom: 5px;

@@ -6624,7 +6624,7 @@ i:before {
   text-decoration: underline; }
 
 .comparison-table-row td:last-child {
-  width: 75%; }
+  width: 66%; }
 
 .comparison-table-row:not(:last-child) {
   border-bottom: 1px dotted black; }
@@ -6658,7 +6658,8 @@ ul {
   -webkit-margin-start: 0;
   -webkit-margin-end: 0px; }
 
-.content-box ul li {
+.content-box ul li,
+.content-box ol li {
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 5px; }
