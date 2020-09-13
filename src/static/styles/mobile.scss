@@ -24,10 +24,19 @@
     .mentors-companies img {
         height: auto;
     }
+
+    .button {
+        padding: 10px 20px;
+    }
 }
 
 // Mobile
 @media (max-width: 991px) {
+    .button {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
     .hidden-phone {
         display: none;
     }

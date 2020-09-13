@@ -6649,7 +6649,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-margin-after: 0; }
 
 p {
-  font-size: 18px; }
+  font-size: 18px;
+  overflow-wrap: break-word; }
 
 pre {
   white-space: pre-wrap; }
@@ -6699,9 +6700,14 @@ a.no-style {
   .main-page-header {
     max-width: 40%; }
   .mentors-companies img {
-    height: auto; } }
+    height: auto; }
+  .button {
+    padding: 10px 20px; } }
 
 @media (max-width: 991px) {
+  .button {
+    padding: 5px 10px;
+    margin: 0 5px; }
   .hidden-phone {
     display: none; }
   .main-page-header {
@@ -6790,7 +6796,6 @@ a.no-style {
   font-size: 18px;
   font-weight: 400;
   font: "Arial Bold", "sans-serif";
-  padding: 10px 20px;
   cursor: pointer;
   border: 1px solid #101820;
   width: max-content; }
