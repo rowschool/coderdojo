@@ -4,6 +4,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .content-table-row {
@@ -38,7 +39,7 @@
 
     td {
         font-size: 18px;
-        padding: 20px 40px;
+        padding: 10px 20px;
         vertical-align: top;
     }
 }

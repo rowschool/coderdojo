@@ -3,11 +3,112 @@
     .visible-phone {
         display: none;
     }
+
+    .content-box img {
+        height: 100px;
+    }
+
+    .content-box img.half-width {
+        width: 50%;
+        height: auto;
+    }
+
+    .content-container {
+        max-width: 75%;
+    }
+
+    .main-page-header {
+        max-width: 40%;
+    }
+
+    .mentors-companies img {
+        height: auto;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
 }
 
 // Mobile
 @media (max-width: 991px) {
+    .button {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
     .hidden-phone {
         display: none;
     }
+
+    .main-page-header {
+        max-width: 75%;
+    }
+
+    .content-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-container {
+        max-width: 85%;
+    }
+}
+
+.mobile-menu-container {}
+
+.mobile-menu-hero-container {
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-hero {
+    padding: 20px;
+    display: block;
+    width: 66%;
+}
+
+.mobile-menu-hero-image {}
+
+.mobile-menu-hero-text {
+    font-size: 36px;
+    color: white;
+    float: right;
+    font-weight: 300;
+    margin-right: 5px;
+    margin-top: -15px;
+}
+
+.mobile-menu-dropdown-container {
+    padding: 20px;
+
+    .ii {
+        font-size: 48px;
+        color: white;
+    }
+}
+
+.mobile-menu-dropdown {
+    width: 100%;
+    color: $blue;
+}
+
+.mobile-menu-dropdown-group {
+    font-size: 24px;
+    background-color: $gold;
+    padding: 10px 20px;
+    border-bottom: 1px solid $blue;
+}
+
+.mobile-menu-dropdown-group-item {
+    display: block;
+
+    &:visited {
+        color: $blue;
+    }
+}
+
+.mobile-menu-dropdown-group-item:not(:first-child) {
+    padding-left: 25px;
 }

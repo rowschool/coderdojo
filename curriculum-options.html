@@ -15,16 +15,19 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="src/static/images/favicon.png">
     <link type="text/css" href="styles/main.css" rel="stylesheet">
+
+    <script src="scripts/main.js"></script>
   </head>
 
   <body>
-    <div class="hero-container">
+    <div class="hero-container hidden-phone">
       <a class="has-img" href="/">
         <img class="hero-container-image" src="src/static/images/logo.svg">
         <h1 class="hero-container-text">Pittsburgh</h1>
       </a>
     </div>
-    <div class="menu-container">
+    
+    <div class="menu-container hidden-phone">
       <ul class="menu-item-list">
         <li class="menu-item-list-item">
           <a class="menu-item-list-item-link" href="index.html">
@@ -135,6 +138,89 @@
         </li>
       </ul>
     </div>
+    <div class="mobile-menu-container visible-phone">
+      <div class="mobile-menu-hero-container">
+        <a class="mobile-menu-hero has-img" href="/">
+          <img class="mobile-menu-hero-image" src="src/static/images/logo.svg">
+          <span class="mobile-menu-hero-text">Pittsburgh</span>
+        </a>
+    
+        <div class="mobile-menu-dropdown-container">
+          <i id="mobile-dropdown-menu-close-button" class="ii ii-close hidden"></i>
+          <i id="mobile-dropdown-menu-open-button" class="ii ii-menu"></i>
+        </div>
+      </div>
+    
+      <div id="mobile-menu-dropdown" class="mobile-menu-dropdown hidden">
+        <div class="mobile-menu-dropdown-group">
+          <div class="mobile-menu-dropdown-group-item">
+            <a class="mobile-menu-dropdown-group-item" href="#">
+              Curriculum
+            </a>
+            <a class="mobile-menu-dropdown-group-item" href="curriculum-options.html">
+              Options
+            </a>
+            <a class="mobile-menu-dropdown-group-item" href="mastery.html">
+              Mastery
+            </a>
+          </div>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="today.html">
+            Today
+          </a>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="#">
+            Volunteers
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="mentors.html">
+              Mentors
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="become-a-mentor.html">
+            Become a mentor
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="become-a-mentor.html#faq">
+            FAQ
+          </a>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="#">
+            Community
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="community.html#sponsors">
+            Sponsors
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="community.html#partners">
+            Partners
+          </a>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="#">
+            About
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="about.html#locations">
+            Locations
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="about.html#contact">
+            Contact Us
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="questions.html">
+            FAQ
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="questions.html#privacy">
+            Privacy Policy
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="scholarships.html">
+            Scholarships
+          </a>
+        </div>
+      </div>
+    </div>
 
     <div class="content-container">
         <h1 class="text-center">Curriculum Options</h1>
@@ -154,7 +240,7 @@
         <div class="content-box">
           <div class="text-center">
             <a class="has-img" href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" target="_blank">
-              <img src="https://scratch.mit.edu/images/logo_sm.png" height="100">
+              <img src="https://scratch.mit.edu/images/logo_sm.png" />
             </a>
           </div>
       
@@ -164,7 +250,7 @@
       
           <div class="text-center">
             <a class="has-img" href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" target="_blank">
-              <img src="https://i.imgur.com/tAuxKKv.png" width="50%">
+              <img class="half-width" src="https://i.imgur.com/tAuxKKv.png" />
             </a>
           </div>
       
@@ -179,7 +265,7 @@
         <div class="content-box">
           <div class="text-center">
             <a class="has-img" href="https://www.roppychop.com/html5/markup-man/" target="_blank">
-              <img src="https://steamcdn-a.akamaihd.net/steam/apps/502210/capsule_616x353.jpg" height="100">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/502210/capsule_616x353.jpg" />
             </a>
           </div>
       
@@ -198,7 +284,7 @@
         <div class="content-box">
           <div class="text-center">
             <a class="has-img" href="https://codecombat.com/play" target="_blank">
-              <img src="https://codecombat.com/images/pages/base/logo.png" height="100">
+              <img src="https://codecombat.com/images/pages/base/logo.png" />
             </a>
           </div>
       
@@ -224,7 +310,7 @@
         <div id="codecademy" class="content-box">
           <div class="text-center">
             <a class="has-img" href="http://www.codecademy.com" target="_blank">
-              <img src="https://www.codecademy.com/webpack/renderer/d7285ffbbd0ca6d1d2179f7d22ea1f67.svg" height="100">
+              <img src="data:image/png;base64,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" />
             </a>
           </div>
       
@@ -236,7 +322,7 @@
         <div class="content-box">
           <div class="text-center">
             <a class="has-img" href="https://www.khanacademy.org/computing" target="_blank">
-              <img src="https://66.media.tumblr.com/f1bd3cd7e4b20dba634393462326859b/tumblr_inline_pcdui455cU1r8ovh1_540.png" height="100">
+              <img src="https://66.media.tumblr.com/f1bd3cd7e4b20dba634393462326859b/tumblr_inline_pcdui455cU1r8ovh1_540.png" />
             </a>
           </div>
       
@@ -248,7 +334,7 @@
         <div class="content-box">
           <div class="text-center">
             <a class="has-img" href="https://stackoverflow.com/" target="_blank">
-              <img src="https://i.stack.imgur.com/440u9.png" height="100">
+              <img src="https://i.stack.imgur.com/440u9.png" />
             </a>
           </div>
       
@@ -270,7 +356,7 @@
       
           <div class="text-center logo-codeanywhere">
             <a class="has-img" href="https://codeanywhere.com/signup" target="_blank">
-              <img src="https://wcdn.codeanywhere.com/images/logo@2x.png" height="100">
+              <img src="https://wcdn.codeanywhere.com/images/logo@2x.png" />
             </a>
           </div>
         </div>

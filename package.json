@@ -4,6 +4,7 @@
   "description": "Website for Coder Dojo Pittsburgh",
   "main": "server.js",
   "dependencies": {
+    "commander": "^6.1.0",
     "handlebars": "^4.0.11",
     "live-server": "^1.2.0",
     "node-sass": "^4.8.3",

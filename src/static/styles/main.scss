@@ -1,4 +1,4 @@
-@import "variables"; // variables MUST go first
+@import "variables"; // variables need to go first
 
 @import "community";
 @import "curriculum";
@@ -13,6 +13,10 @@
 
 @import "mobile";
 
+.hidden {
+    display: none;
+}
+
 .text-center {
     text-align: center;
 }
@@ -24,7 +28,6 @@
 }
 
 .content-container {
-    max-width: 75%;
     margin: 20px auto;
 
     // Prevent vertical margin collapse with flexbox!
@@ -33,7 +36,6 @@
 }
 
 .main-page-header {
-    max-width: 40%;
     text-align: justify;
     margin: auto;
 }
@@ -56,7 +58,6 @@
     font-size: 18px;
     font-weight: 400;
     font: "Arial Bold", "sans-serif";
-    padding: 10px 20px;
     cursor: pointer;
     border: 1px solid $black;
     width: max-content;
