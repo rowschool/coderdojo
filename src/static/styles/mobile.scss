@@ -3,12 +3,26 @@
     .visible-phone {
         display: none;
     }
+
+    .content-box img {
+        height: 100px;
+    }
+
+    .content-box img.half-width {
+        width: 50%;
+        height: auto;
+    }
 }
 
 // Mobile
 @media (max-width: 991px) {
     .hidden-phone {
         display: none;
+    }
+
+    .content-box img {
+        max-width: 100%;
+        height: auto;
     }
 }
 

@@ -18,7 +18,8 @@
 
 .logo-codeanywhere {
   background-color: black;
-  width: max-content;
+  min-width: 200px;
+  max-width: max-content;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 20px; }
@@ -6686,11 +6687,19 @@ a.no-style {
 
 @media (min-width: 992px) {
   .visible-phone {
-    display: none; } }
+    display: none; }
+  .content-box img {
+    height: 100px; }
+  .content-box img.half-width {
+    width: 50%;
+    height: auto; } }
 
 @media (max-width: 991px) {
   .hidden-phone {
-    display: none; } }
+    display: none; }
+  .content-box img {
+    max-width: 100%;
+    height: auto; } }
 
 .mobile-menu-hero-container {
   background-color: #003087;
