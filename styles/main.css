@@ -6692,6 +6692,51 @@ a.no-style {
   .hidden-phone {
     display: none; } }
 
+.mobile-menu-hero-container {
+  background-color: #003087;
+  display: flex;
+  justify-content: space-between; }
+
+.mobile-menu-hero {
+  padding: 20px;
+  display: block;
+  width: 66%; }
+
+.mobile-menu-hero-text {
+  font-size: 36px;
+  color: white;
+  float: right;
+  font-weight: 300;
+  margin-right: 5px;
+  margin-top: -15px; }
+
+.mobile-menu-dropdown-container {
+  padding: 20px; }
+  .mobile-menu-dropdown-container .ii {
+    font-size: 48px;
+    color: white; }
+
+.mobile-menu-dropdown {
+  width: 100%;
+  color: #003087; }
+
+.mobile-menu-dropdown-group {
+  font-size: 24px;
+  background-color: #FFB612;
+  padding: 10px 20px;
+  border-bottom: 1px solid #003087; }
+
+.mobile-menu-dropdown-group-item {
+  display: block; }
+  .mobile-menu-dropdown-group-item:visited {
+    color: #003087; }
+
+.mobile-menu-dropdown-group-item:not(:first-child) {
+  padding-left: 25px; }
+
+.hidden {
+  display: none; }
+
 .text-center {
   text-align: center; }
 

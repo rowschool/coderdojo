@@ -15,11 +15,13 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="src/static/images/favicon.png">
     <link type="text/css" href="styles/main.css" rel="stylesheet">
+
+    <script src="scripts/main.js"></script>
   </head>
 
   <body>
-    {{> hero}}
-    {{> menu}}
+    {{> hero-menu}}
+    {{> mobile/hero-menu }}
 
     <div class="content-container">
       {{> @partial-block }}

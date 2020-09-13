@@ -15,16 +15,19 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="src/static/images/favicon.png">
     <link type="text/css" href="styles/main.css" rel="stylesheet">
+
+    <script src="scripts/main.js"></script>
   </head>
 
   <body>
-    <div class="hero-container">
+    <div class="hero-container hidden-phone">
       <a class="has-img" href="/">
         <img class="hero-container-image" src="src/static/images/logo.svg">
         <h1 class="hero-container-text">Pittsburgh</h1>
       </a>
     </div>
-    <div class="menu-container">
+    
+    <div class="menu-container hidden-phone">
       <ul class="menu-item-list">
         <li class="menu-item-list-item">
           <a class="menu-item-list-item-link" href="index.html">
@@ -134,6 +137,89 @@
           </ul>
         </li>
       </ul>
+    </div>
+    <div class="mobile-menu-container visible-phone">
+      <div class="mobile-menu-hero-container">
+        <a class="mobile-menu-hero has-img" href="/">
+          <img class="mobile-menu-hero-image" src="src/static/images/logo.svg">
+          <span class="mobile-menu-hero-text">Pittsburgh</span>
+        </a>
+    
+        <div class="mobile-menu-dropdown-container">
+          <i id="mobile-dropdown-menu-close-button" class="ii ii-close hidden"></i>
+          <i id="mobile-dropdown-menu-open-button" class="ii ii-menu"></i>
+        </div>
+      </div>
+    
+      <div id="mobile-menu-dropdown" class="mobile-menu-dropdown hidden">
+        <div class="mobile-menu-dropdown-group">
+          <div class="mobile-menu-dropdown-group-item">
+            <a class="mobile-menu-dropdown-group-item" href="#">
+              Curriculum
+            </a>
+            <a class="mobile-menu-dropdown-group-item" href="curriculum-options.html">
+              Options
+            </a>
+            <a class="mobile-menu-dropdown-group-item" href="mastery.html">
+              Mastery
+            </a>
+          </div>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="today.html">
+            Today
+          </a>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="#">
+            Volunteers
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="mentors.html">
+              Mentors
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="become-a-mentor.html">
+            Become a mentor
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="become-a-mentor.html#faq">
+            FAQ
+          </a>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="#">
+            Community
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="community.html#sponsors">
+            Sponsors
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="community.html#partners">
+            Partners
+          </a>
+        </div>
+    
+        <div class="mobile-menu-dropdown-group">
+          <a class="mobile-menu-dropdown-group-item" href="#">
+            About
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="about.html#locations">
+            Locations
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="about.html#contact">
+            Contact Us
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="questions.html">
+            FAQ
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="questions.html#privacy">
+            Privacy Policy
+          </a>
+          <a class="mobile-menu-dropdown-group-item" href="scholarships.html">
+            Scholarships
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="content-container">

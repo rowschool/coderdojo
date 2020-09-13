@@ -1,4 +1,4 @@
-@import "variables"; // variables MUST go first
+@import "variables"; // variables need to go first
 
 @import "community";
 @import "curriculum";
@@ -12,6 +12,10 @@
 @import "today";
 
 @import "mobile";
+
+.hidden {
+    display: none;
+}
 
 .text-center {
     text-align: center;
