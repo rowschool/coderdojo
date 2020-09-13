@@ -6692,14 +6692,22 @@ a.no-style {
     height: 100px; }
   .content-box img.half-width {
     width: 50%;
-    height: auto; } }
+    height: auto; }
+  .content-container {
+    max-width: 75%; }
+  .main-page-header {
+    max-width: 40%; } }
 
 @media (max-width: 991px) {
   .hidden-phone {
     display: none; }
+  .main-page-header {
+    max-width: 75%; }
   .content-box img {
     max-width: 100%;
-    height: auto; } }
+    height: auto; }
+  .content-container {
+    max-width: 85%; } }
 
 .mobile-menu-hero-container {
   background-color: #003087;
@@ -6755,13 +6763,11 @@ a.no-style {
   margin-right: auto; }
 
 .content-container {
-  max-width: 75%;
   margin: 20px auto;
   display: flex;
   flex-direction: column; }
 
 .main-page-header {
-  max-width: 40%;
   text-align: justify;
   margin: auto; }
 
