@@ -41,8 +41,8 @@ ul {
 }
 
 a {
-    color: $blue;
-    background-color: $gold;
+    color: $brightBlue;
+    background-color: $redOrange;
     text-decoration: none;
 
     &:hover {
@@ -50,7 +50,7 @@ a {
     }
 
     &:visited {
-        color: $black;
+        color: $redOrange;
     }
 }
 

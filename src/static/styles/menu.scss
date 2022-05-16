@@ -1,6 +1,6 @@
 .menu-container {
-    background-color: $gold;
-    border-bottom: 5px solid $blue;
+    background-color: $redOrange;
+    border-bottom: 5px solid $navyBlue;
     margin-bottom: 30px;
 }
 
@@ -17,22 +17,22 @@
     padding: 10px 40px;
     font-size: 24px;
     font-weight: 200;
-    color: $blue;
+    color: $brightBlue;
     display: inline;
     position: relative;
 }
 
 .menu-item-list-item .menu-item-list-item-link {
-    color: $blue;
+    color: $brightBlue;
 
     &:visited {
-        color: $blue;
+        color: $brightBlue;
     }
 }
 
 .menu-item-list-dropdown-list-item .menu-item-list-item-link {
     &:visited {
-        color: $blue;
+        color: $brightBlue;
     }
 }
 
@@ -60,9 +60,9 @@
     right: 0;
     font-size: 24px;
     font-weight: 200;
-    color: $blue;
-    background-color: $gold;
-    border: 1px solid $blue;
+    color: $brightBlue;
+    background-color: $redOrange;
+    border: 1px solid $redOrange;
     padding-inline-start: 0;
     min-width: 100%;
     width: max-content;
@@ -82,13 +82,13 @@
     list-style: none;
 
     &:hover {
-        background-color: $blue;
-        color: $gold;
+        background-color: $redOrange;
+        color: $brightBlue;
 
         .menu-item-list-item-link {
             width: max-content;
-            color: $gold;
-            background-color: $blue;
+            color: $brightBlue;
+            background-color: $redOrange;
         }
     }
 }
