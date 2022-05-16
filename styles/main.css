@@ -6509,7 +6509,12 @@ i:before {
 
 .mentors-companies {
   width: 100%;
-  margin: 20px auto 0 auto; }
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .mentors-companies img {
+    max-width: 200px; }
 
 .mentors {
   margin-top: 20px; }
@@ -6665,9 +6670,11 @@ ul {
   margin-bottom: 5px; }
 
 a {
+  color: #D9531E;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #D9531E; }
   a:visited {
     color: #D9531E; }
 
@@ -6714,7 +6721,7 @@ a.no-style {
     max-width: 85%; } }
 
 .mobile-menu-hero-container {
-  background-color: #003087;
+  background-color: #002D56;
   display: flex;
   justify-content: space-between; }
 
@@ -6794,20 +6801,15 @@ a.no-style {
   font: "Arial Bold", "sans-serif";
   cursor: pointer;
   border: 1px solid #101820;
-  width: max-content; }
+  width: max-content;
+  background-color: #002D56; }
+  .button:hover {
+    background-color: #005596;
+    text-decoration: underline; }
   .button a {
-    color: #fff;
-    background-color: inherit; }
-    .button a:hover {
-      text-decoration: none; }
+    color: #fff; }
     .button a:visited {
       color: #fff; }
-
-.button-blue {
-  background-color: #003087; }
-
-.button-green {
-  background-color: #085; }
 
 a.has-img {
   background-color: transparent; }

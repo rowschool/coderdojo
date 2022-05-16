@@ -61,14 +61,15 @@
     cursor: pointer;
     border: 1px solid $black;
     width: max-content;
+    background-color: $navyBlue;
+
+    &:hover {
+        background-color: $brightBlue;
+        text-decoration: underline;
+    }
 
     a {
         color: $white;
-        background-color: inherit;
-
-        &:hover {
-            text-decoration: none;
-        }
 
         &:visited {
             color: $white;
@@ -76,13 +77,13 @@
     }
 }
 
-.button-blue {
-    background-color: $blue;
-}
+// .button-blue {
+//     background-color: $blue;
+// }
 
-.button-green {
-    background-color: $green;
-}
+// .button-green {
+//     background-color: $green;
+// }
 
 a.has-img {
 // a:has(> img) { - in progress in CSS4

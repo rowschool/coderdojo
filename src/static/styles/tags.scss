@@ -41,12 +41,12 @@ ul {
 }
 
 a {
-    // color: $brightBlue;
-    // background-color: $redOrange;
+    color: $redOrange;
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
+        color: $redOrange;
     }
 
     &:visited {
