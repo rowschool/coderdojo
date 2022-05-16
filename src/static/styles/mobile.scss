@@ -58,7 +58,7 @@
 .mobile-menu-container {}
 
 .mobile-menu-hero-container {
-    background-color: $blue;
+    background-color: $navyBlue;
     display: flex;
     justify-content: space-between;
 }
@@ -91,21 +91,22 @@
 
 .mobile-menu-dropdown {
     width: 100%;
-    color: $blue;
+    color: $white;
 }
 
 .mobile-menu-dropdown-group {
     font-size: 24px;
-    background-color: $gold;
+    background-color: $brightBlue;
     padding: 10px 20px;
-    border-bottom: 1px solid $blue;
+    border-bottom: 1px solid $navyBlue;
 }
 
 .mobile-menu-dropdown-group-item {
     display: block;
+    color: $white;
 
     &:visited {
-        color: $blue;
+        color: $white;
     }
 }
 
