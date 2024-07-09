@@ -1,3 +1,27 @@
+<script>
+    function getQuery(key) {
+        var query = window.location.search.substring(1);
+        var key_values = query.split("&");
+        var params = {};
+        key_values.map(function (key_val) {
+            var key_val_arr = key_val.split("=");
+            params[key_val_arr[0]] = key_val_arr[1];
+        });
+        if (typeof params[key] != "undefined") {
+            return params[key];
+        }
+        return "";
+    }
+
+    window.onload = function () {
+        md = document.createElement("zero-md")
+        md.setAttribute("src", getQuery("src"))
+        md.setAttribute("no-shadow", "")
+        document.getElementById("mdcontainer").append(md)
+    }
+</script>
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
   <head>
@@ -239,113 +263,11 @@
     </div>
 
     <div class="content-container">
-        <h1 class="text-center">
-          Become a Mentor
-        </h1>
+        <head>
+            <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+        </head>
       
-        <div class="content-box">
-          <h1>
-            Would you like to volunteer to be a mentor?
-          </h1>
-      
-          <p>
-            CoderDojo Denver has <a href="#junior">junior</a> and adult mentors.
-          </p>
-      
-          <p>
-            Adult mentors don't need to have any programming knowledge - just the ability to think logically, a passion for helping people grow, and a little bit of problem-solving ability. Non-developers and developers with knowledge of HTML, CSS, JavaScript, Python, Unity, and beyond are welcome to become mentors!
-          </p>
-      
-          <p>
-            Just fill out the form below.
-          </p>
-        </div>
-      
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVqE278Z5ODoYEK7hLWd3b03UitSbJVB2fnlaNAEufX_vHvg/viewform?embedded=true" width="100%" height="1385" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-      
-        <div id="junior" class="content-box">
-          <h1>Become a junior mentor!</h1>
-      
-          <p>
-            Junior mentors are students aged 7-17 who want to gain mentorship and leadership skills in addition to working on projects like other students who attend CoderDojo.
-          </p>
-      
-          <p>
-            Junior mentors are the go-to for assisting other ninjas and their parents/guardians - greeting and welcoming newcomers, directing them to tables and helping them get on WiFi to get started on session work.
-          </p>
-      
-          <p>
-            Ninjas can become junior mentors if they:
-      
-            <ul>
-              <li>
-                have attended at least 5 CoderDojo sessions
-              </li>
-              <li>
-                have achieved level 1 mastery in any language
-              </li>
-              <li>
-                can arrive at 8:15am to help set up for the day
-              </li>
-            </ul>
-          </p>
-      
-          <p>
-            Talk to an adult mentor for more information.
-      
-          </p>
-        </div>
-      
-        <div id="faq" class="content-box">
-          <h1 class="text-center">Frequently Asked Questions (FAQ)</h1>
-      
-          <table class="comparison-table">
-            <tr class="comparison-table-row-header">
-              <td>Questions</td>
-              <td>Answers</td>
-            </tr>
-            <tr class="comparison-table-row">
-              <td>
-                Do I need to have programming knowledge to be a mentor?
-              </td>
-              <td>
-                No. All you need to mentor are problem-solving skills, the ability to use a search engine, and a passion for technology and helping kids learn to code.
-              </td>
-            </tr>
-            <tr class="comparison-table-row">
-              <td>
-                Will I be expected to teach at sessions?
-              </td>
-              <td>
-                No, children will be directed to websites to learn from. Mentors will provide assistance, problem-solving, and encourage collaboration between kids. A mentor serves as a facilitator, pointing students in the direction they wish to go.
-              </td>
-            </tr>
-            <tr class="comparison-table-row">
-              <td>
-                Do I need to bring anything?
-              </td>
-              <td>
-                No. Each child will have their own laptop.
-              </td>
-            </tr>
-            <tr class="comparison-table-row">
-              <td>
-                Do I have to attend every session to be a mentor?
-              </td>
-              <td>
-                You’re not required to attend every session, though we’d love to have you at every session!
-              </td>
-            </tr>
-            <tr class="comparison-table-row">
-              <td>
-                I am a mentor and also the parent/guardian of kids who are interested in coding. Can I bring them along?
-              </td>
-              <td>
-                Of course! Sign them up and check them in on the day of the session!
-              </td>
-            </tr>
-          </table>
-        </div>
+        <div id="mdcontainer"></div>
     </div>
   </body>
 </html>
