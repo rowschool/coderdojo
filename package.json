@@ -1,31 +1,36 @@
 {
-  "name": "CoderDojoPGH",
+  "name": "CoderDojo Denver",
   "version": "1.0.0",
-  "description": "Website for Coder Dojo Pittsburgh",
+  "description": "Website for CoderDojo Denver",
   "main": "server.js",
   "dependencies": {
-    "commander": "^6.1.0",
-    "handlebars": "^4.0.11",
-    "live-server": "^1.2.0",
-    "node-sass": "^4.8.3",
-    "nodemon": "^1.19.1"
+    "commander": "^6.2.1",
+    "glob": "^11.0.0",
+    "handlebars": "^4.7.8",
+    "live-server": "^1.2.2",
+    "mkdirp": "^3.0.1",
+    "nodemon": "^1.19.4",
+    "sass": "^1.77.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build-css": "node-sass --include-path scss src/static/styles/main.scss styles/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "node server.js && npm run watch-css",
+    "build-css": "sass src/static/styles/main.scss styles/main.css",
+    "watch-css": "sass --watch src/static/styles/main.scss:styles/main.css",
     "build-views": "node build/build.js -d cwd -p \"src/views/partials/**/*.hbs\" -l \"src/views/layouts/**/*.hbs\" -t \"src/views/templates/**/*.hbs\" -v",
-    "watch-views": "nodemon -e hbs -x \"npm run build-views\""
+    "watch-views": "nodemon -e hbs -x \"npm run build-views\"",
+    "build-md": "node build/markdown-to-handlebars src/markdown/blog/ src/views/templates/blog/",
+    "update-post": "npm run build-md",
+    "clear-html": "rm *.html && rm **/*.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rowschool/coderdojopgh.git"
+    "url": "git+https://github.com/rowschool/coderdojo.git"
   },
   "author": "Neil Thawani",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rowschool/coderdojopgh/issues"
+    "url": "https://github.com/rowschool/coderdojo/issues"
   },
-  "homepage": "https://github.com/rowschool/coderdojopgh#readme"
+  "homepage": "https://github.com/rowschool/coderdojo#readme"
 }

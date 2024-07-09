@@ -55,6 +55,28 @@
     }
 }
 
+@media (max-width: $screen-desktop) {
+    .mobile-menu-hero-text {
+        font-size: 72px;
+        color: white;
+        float: right;
+        font-weight: 300;
+        margin-right: 55px;
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: $screen-tablet) {
+    .mobile-menu-hero-text {
+        font-size: 36px;
+        color: white;
+        float: right;
+        font-weight: 300;
+        margin-right: 25px;
+        margin-top: -15px;
+    }
+}
+
 .mobile-menu-container {}
 
 .mobile-menu-hero-container {
@@ -70,15 +92,6 @@
 }
 
 .mobile-menu-hero-image {}
-
-.mobile-menu-hero-text {
-    font-size: 36px;
-    color: white;
-    float: right;
-    font-weight: 300;
-    margin-right: 5px;
-    margin-top: -15px;
-}
 
 .mobile-menu-dropdown-container {
     padding: 20px;
