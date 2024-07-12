@@ -1,31 +1,49 @@
 <script>
     function getQuery(key) {
         var query = window.location.search.substring(1);
-        var key_values = query.split("&");
+        var key_values = query.split('&');
         var params = {};
         key_values.map(function (key_val) {
-            var key_val_arr = key_val.split("=");
+            var key_val_arr = key_val.split('=');
             params[key_val_arr[0]] = key_val_arr[1];
         });
-        if (typeof params[key] != "undefined") {
+        if (typeof params[key] != 'undefined') {
             return params[key];
         }
-        return "";
+        return '';
     }
 
     window.onload = function () {
-        md = document.createElement("zero-md")
-        md.setAttribute("src", getQuery("src"))
-        md.setAttribute("no-shadow", "")
-        document.getElementById("mdcontainer").append(md)
+        console.log('window.onload');
+        let src = getQuery('src');
+
+        if (!src.length) {
+            src = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/README.md';
+        }
+        // const src = getQuery('src') ?? 
+        // console.log('getQuery(src)', getQuery('src'));
+        // console.log('src', src);
+        // debugger;
+        const md = document.createElement('zero-md');
+        md.setAttribute('src', src);
+        md.setAttribute('no-shadow', '');
+        document.getElementById('mdcontainer').append(md);
+
+        if (!window.location.search.length) {
+            const oldHref = window.location.href;
+            const newHref = `${oldHref}?src=${src}`;
+            window.location.href = newHref;
+        }
     }
 
-    // Update ToC links and img src's to redirect to the CoderDojo website.
+    // DOM-ready GitHub Markdown workarounds. See comments below for more details.
     document.addEventListener('DOMContentLoaded', function() {
         window.setTimeout(() => {
+            const shadowDOMRoot = document.querySelector('#mdcontainer zero-md').shadowRoot;
+
             // Update all `README.md` ToC links to redirect to the CoderDojo website,
             // appending `basePath` and the link to the `.md` doc containing the lesson.
-            document.querySelector('#mdcontainer zero-md').shadowRoot.querySelectorAll('a').forEach(function(link) {
+            shadowDOMRoot.querySelectorAll('a').forEach(function(link) {
                 if (window.location.pathname.includes('lesson-plan') && 
                     window.location.search.includes('README.md') &&
                     link.href.includes('https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/')) {
@@ -38,8 +56,8 @@
                 }
             });
 
-            // Update all lessons `img` tags to render correctly because we're rendering relative URLs in the docs.
-            document.querySelector('#mdcontainer zero-md').shadowRoot.querySelectorAll('img').forEach(function(image) {
+            // Update all lesson `img` tags to render correctly because we're rendering relative URLs in the docs.
+            shadowDOMRoot.querySelectorAll('img').forEach(function(image) {
                 const oldOrigin = `${window.location.origin}/`;
                 const newOrigin = 'https://github.com/rowschool/coderdojo-lessons/raw/main/';
                 const newSource = image.src.replace(oldOrigin, newOrigin);
