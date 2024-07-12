@@ -59,7 +59,7 @@
                 // and the live URL is `rowschool.com/coderdojo`.
                 // Dev at `localhost` is just `localhost:port`, so the `pathname` must be taken into account.
                 let oldOrigin = `${window.location.origin}/coderdojo/`;
-                if (window.location.includes('localhost')) {
+                if (window.location.href.includes('localhost')) {
                     oldOrigin = `${window.location.origin}/`;
                 }
 
