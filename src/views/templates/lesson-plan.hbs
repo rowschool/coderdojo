@@ -57,6 +57,7 @@
                 const oldOrigin = `${window.location.origin}/`;
                 const newOrigin = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/';
                 const newSource = image.src.replace(oldOrigin, newOrigin);
+                console.log('oldOrigin', oldOrigin, 'newOrigin', newOrigin, 'newSource', newSource);
                 image.src = newSource;
             });
         }, 1000);
