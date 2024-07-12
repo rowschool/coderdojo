@@ -14,16 +14,12 @@
     }
 
     window.onload = function () {
-        console.log('window.onload');
         let src = getQuery('src');
 
         if (!src.length) {
             src = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/README.md';
         }
-        // const src = getQuery('src') ?? 
-        // console.log('getQuery(src)', getQuery('src'));
-        // console.log('src', src);
-        // debugger;
+        
         const md = document.createElement('zero-md');
         md.setAttribute('src', src);
         md.setAttribute('no-shadow', '');
