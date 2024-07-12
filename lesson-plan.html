@@ -19,6 +19,34 @@
         md.setAttribute("no-shadow", "")
         document.getElementById("mdcontainer").append(md)
     }
+
+    // Update ToC links and img src's to redirect to the CoderDojo website.
+    document.addEventListener('DOMContentLoaded', function() {
+        window.setTimeout(() => {
+            // Update all `README.md` ToC links to redirect to the CoderDojo website,
+            // appending `basePath` and the link to the `.md` doc containing the lesson.
+            document.querySelector('#mdcontainer zero-md').shadowRoot.querySelectorAll('a').forEach(function(link) {
+                if (window.location.pathname.includes('lesson-plan') && 
+                    window.location.search.includes('README.md') &&
+                    link.href.includes('https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/')) {
+
+                    const urlObj = new URL(window.location.href);
+                    urlObj.search = '';
+                    const basePath = urlObj.toString();
+                    const newHref = `${basePath}?src=${link.href}`;
+                    link.href = newHref;
+                }
+            });
+
+            // Update all lessons `img` tags to render correctly because we're rendering relative URLs in the docs.
+            document.querySelector('#mdcontainer zero-md').shadowRoot.querySelectorAll('img').forEach(function(image) {
+                const oldOrigin = `${window.location.origin}/`;
+                const newOrigin = 'https://github.com/rowschool/coderdojo-lessons/raw/main/';
+                const newSource = image.src.replace(oldOrigin, newOrigin);
+                image.src = newSource;
+            });
+        }, 1000);
+    });
 </script>
 
 
