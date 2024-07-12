@@ -55,7 +55,7 @@
             // Update all lesson `img` tags to render correctly because we're rendering relative URLs in the docs.
             shadowDOMRoot.querySelectorAll('img').forEach(function(image) {
                 const oldOrigin = `${window.location.origin}/`;
-                const newOrigin = 'https://github.com/rowschool/coderdojo-lessons/raw/main/';
+                const newOrigin = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/';
                 const newSource = image.src.replace(oldOrigin, newOrigin);
                 image.src = newSource;
             });
