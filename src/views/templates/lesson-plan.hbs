@@ -54,11 +54,17 @@
 
             // Update all lesson `img` tags to render correctly because we're rendering relative URLs in the docs.
             shadowDOMRoot.querySelectorAll('img').forEach(function(image) {
-                const oldOrigin = `${window.location.origin}/`;
+                // Accounting for developing in localhost
+                // This is a GitHub Pages quirk, because github.com/rowschool holds the `coderdojo` repo, 
+                // and the live URL is `rowschool.com/coderdojo`.
+                // Dev at `localhost` is just `localhost:port`, so the `pathname` must be taken into account.
+                let oldOrigin = `${window.location.origin}/coderdojo/`;
+                if (window.location.includes('localhost')) {
+                    oldOrigin = `${window.location.origin}/`;
+                }
+
                 const newOrigin = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/';
-                console.log('image.src', image.src);
                 const newSource = image.src.replace(oldOrigin, newOrigin);
-                console.log('oldOrigin', oldOrigin, 'newOrigin', newOrigin, 'newSource', newSource);
                 image.src = newSource;
             });
         }, 1000);
