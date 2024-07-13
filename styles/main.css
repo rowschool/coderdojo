@@ -266,8 +266,9 @@
   color: #fff;
   font-size: 64px;
   font-weight: 200;
-  margin-right: -105px;
-  margin-top: -25px;
+  margin: -25px auto 0 auto;
+  width: max-content;
+  padding-left: 105px;
 }
 
 @font-face {

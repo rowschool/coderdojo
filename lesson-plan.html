@@ -1,4 +1,5 @@
 <script>
+    // Hoisted function to retrieve stated query param (`key`) value
     function getQuery(key) {
         var query = window.location.search.substring(1);
         var key_values = query.split('&');
@@ -13,6 +14,7 @@
         return '';
     }
 
+    // Retrieve Markdown page from GitHub repo for rendering on /lesson-plan path.
     window.onload = function () {
         let src = getQuery('src');
 
@@ -20,11 +22,13 @@
             src = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/README.md';
         }
         
+        // Create shadow DOM element to render Markdown page.
         const md = document.createElement('zero-md');
         md.setAttribute('src', src);
         md.setAttribute('no-shadow', '');
         document.getElementById('mdcontainer').append(md);
 
+        // Render Markdown page.
         if (!window.location.search.length) {
             const oldHref = window.location.href;
             const newHref = `${oldHref}?src=${src}`;
@@ -34,6 +38,10 @@
 
     // DOM-ready GitHub Markdown workarounds. See comments below for more details.
     document.addEventListener('DOMContentLoaded', function() {
+        const gitHubPagesOrigin = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/';
+
+        // Set timeout because it takes ~1sec for request to process .md file.
+        // If ToC doesn't render, review `timeout=1000ms`.
         window.setTimeout(() => {
             const shadowDOMRoot = document.querySelector('#mdcontainer zero-md').shadowRoot;
 
@@ -42,7 +50,7 @@
             shadowDOMRoot.querySelectorAll('a').forEach(function(link) {
                 if (window.location.pathname.includes('lesson-plan') && 
                     window.location.search.includes('README.md') &&
-                    link.href.includes('https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/')) {
+                    link.href.includes(gitHubPagesOrigin)) {
 
                     const urlObj = new URL(window.location.href);
                     urlObj.search = '';
@@ -63,7 +71,7 @@
                     oldOrigin = `${window.location.origin}/`;
                 }
 
-                const newOrigin = 'https://raw.githubusercontent.com/rowschool/coderdojo-lessons/main/';
+                const newOrigin = gitHubPagesOrigin;
                 const newSource = image.src.replace(oldOrigin, newOrigin);
                 image.src = newSource;
             });
