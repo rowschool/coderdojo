@@ -8861,7 +8861,8 @@ a.no-style:visited, a.no-style:hover {
 }
 
 iframe {
-  height: max-content;
+  min-height: max-content;
+  max-height: 500px;
 }
 
 .today-theme {

@@ -66,5 +66,6 @@ a.no-style {
 }
 
 iframe {
-    height: max-content;
+    min-height: max-content;
+    max-height: 500px;
 }
