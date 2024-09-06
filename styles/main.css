@@ -8860,6 +8860,10 @@ a.no-style:visited, a.no-style:hover {
   text-decoration: none;
 }
 
+iframe {
+  height: max-content;
+}
+
 .today-theme {
   font-size: 1.25em;
   font-style: italic;
@@ -8946,6 +8950,7 @@ a.no-style:visited, a.no-style:hover {
 .mobile-menu-dropdown-container .ii {
   font-size: 48px;
   color: white;
+  cursor: pointer;
 }
 
 .mobile-menu-dropdown {
@@ -9019,6 +9024,7 @@ a.no-style:visited, a.no-style:hover {
   border: 1px solid #101820;
   width: max-content;
   background-color: #002D56;
+  text-align: center;
 }
 .button:hover {
   background-color: #005596;
