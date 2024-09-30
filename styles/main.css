@@ -8912,6 +8912,9 @@ iframe {
   .content-container {
     max-width: 85%;
   }
+  .content-box .main-page-buttons {
+    width: inherit;
+  }
 }
 @media (max-width: 992px) {
   .mobile-menu-hero-text {

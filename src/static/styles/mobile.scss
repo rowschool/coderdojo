@@ -53,6 +53,10 @@
     .content-container {
         max-width: 85%;
     }
+
+    .content-box .main-page-buttons {
+        width: inherit;
+    }
 }
 
 @media (max-width: $screen-desktop) {
